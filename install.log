@@ -1,0 +1,1158 @@
+$ rails new . -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+       exist
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+    conflict  .gitignore
+Overwrite /Users/nathanielwelch/tmp/simplegram/.gitignore? (enter "h" for help) [Ynaqdh] y
+       force  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+       apply  https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+    composer
+    composer   _____       _ _
+    composer  |  __ \     (_) |       /\
+    composer  | |__) |__ _ _| |___   /  \   _ __  _ __  ___
+    composer  |  _  // _` | | / __| / /\ \ | '_ | '_ \/ __|
+    composer  | | \ \ (_| | | \__ \/ ____ \| |_) | |_) \__ \
+    composer  |_|  \_\__,_|_|_|___/_/    \_\ .__/| .__/|___/
+    composer                               | |   | |
+    composer                               | |   | |
+    composer
+    composer  If you like Rails Composer, will you support it?
+    composer  You can help by purchasing our tutorials.
+    composer  Need help? Ask on Stack Overflow with the tag 'railsapps.'
+    composer  Your new application will contain diagnostics in its README file.
+      insert    config/application.rb
+      recipe  Running core recipe...
+        core  selected all core recipes
+      recipe  Running git recipe...
+         git  initialize git
+      remove    .gitignore
+      create    .gitignore
+         run    git init from "."
+Reinitialized existing Git repository in /Users/nathanielwelch/tmp/simplegram/.git/
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: initial commit" from "."
+      recipe  Running railsapps recipe...
+      option  Build a starter application?
+          1)  Build a RailsApps example application
+          2)  Contributed applications (none available)
+          3)  Custom application (experimental)
+      choose  Enter your selection: 1
+      option  Choose a starter application.
+          1)  learn-rails
+          2)  rails-bootstrap
+          3)  rails-foundation
+          4)  rails-mailinglist-activejob
+          5)  rails-omniauth
+          6)  rails-devise
+          7)  rails-devise-roles
+          8)  rails-devise-pundit
+          9)  rails-signup-download
+         10)  rails-stripe-checkout
+         11)  rails-stripe-coupons
+         12)  rails-stripe-membership-saas
+      choose  Enter your selection: 12
+              Get on the mailing list for Rails Composer news?
+      option  Enter your email address:
+      recipe  Running learn_rails recipe...
+      recipe  Running rails_bootstrap recipe...
+      recipe  Running rails_foundation recipe...
+      recipe  Running rails_omniauth recipe...
+      recipe  Running rails_devise recipe...
+      recipe  Running rails_devise_roles recipe...
+      recipe  Running rails_devise_pundit recipe...
+      recipe  Running rails_signup_download recipe...
+      recipe  Running rails_mailinglist_activejob recipe...
+      recipe  Running rails_stripe_checkout recipe...
+      recipe  Running rails_stripe_coupons recipe...
+      recipe  Running rails_stripe_membership_saas recipe...
+      recipe  Running setup recipe...
+       setup  Your operating system is darwin15.2.0.
+       setup  You are using Ruby version 2.3.0.
+       setup  You are using Rails version 4.2.7.
+      option  Web server for development?
+          1)  Puma (default)
+          2)  Thin
+          3)  Unicorn
+          4)  Phusion Passenger (Apache/Nginx)
+          5)  Phusion Passenger (Standalone)
+      choose  Enter your selection:
+      choose  Enter your selection: 1
+      option  Web server for production?
+          1)  Same as development
+          2)  Thin
+          3)  Unicorn
+          4)  Phusion Passenger (Apache/Nginx)
+          5)  Phusion Passenger (Standalone)
+      choose  Enter your selection: 1
+      option  Database used in development?
+          1)  SQLite
+          2)  PostgreSQL
+          3)  MySQL
+      choose  Enter your selection: 2
+      option  Template engine?
+          1)  ERB
+          2)  Haml
+          3)  Slim
+      choose  Enter your selection: 1
+      option  Test framework?
+          1)  None
+          2)  RSpec with Capybara
+      choose  Enter your selection: 1
+       setup  The Devise 'forgot password' feature requires email.
+      option  Add support for sending email?
+          1)  None
+          2)  Gmail
+          3)  SMTP
+          4)  SendGrid
+          5)  Mandrill
+      choose  Enter your selection: 4
+      option  Admin interface for database?
+          1)  None
+          2)  Thoughtbot Administrate
+          3)  Upmin
+      choose  Enter your selection: 2
+       setup  Which Bootstrap page template? Visit startbootstrap.com.
+      option  Add Bootstrap page templates?
+          1)  None
+          2)  1 Col Portfolio
+          3)  2 Col Portfolio
+          4)  3 Col Portfolio
+          5)  4 Col Portfolio
+          6)  Bare
+          7)  Blog Home
+          8)  Business Casual
+          9)  Business Frontpage
+         10)  Clean Blog
+         11)  Full Width Pics
+         12)  Heroic Features
+         13)  Landing Page
+         14)  Modern Business
+         15)  One Page Wonder
+         16)  Portfolio Item
+         17)  Round About
+         18)  Shop Homepage
+         19)  Shop Item
+         20)  Simple Sidebar
+         21)  Small Business
+         22)  Stylish Portfolio
+         23)  The Big Picture
+         24)  Thumbnail Gallery
+      choose  Enter your selection: 1
+      create    config/railscomposer.yml
+      append    config/railscomposer.yml
+      recipe  Running locale recipe...
+      recipe  Running readme recipe...
+      recipe  Running gems recipe...
+      insert    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: Gemfile" from "."
+      recipe  Running tests recipe...
+      recipe  Running email recipe...
+      recipe  Running devise recipe...
+      recipe  Running omniauth recipe...
+      recipe  Running roles recipe...
+      recipe  Running frontend recipe...
+      recipe  Running pages recipe...
+      recipe  Running init recipe...
+      recipe  Running analytics recipe...
+      option  Install page-view analytics?
+          1)  None
+          2)  Google Analytics
+          3)  Segment.io
+      choose  Enter your selection: 1
+      recipe  Running deployment recipe...
+      option  Prepare for deployment?
+          1)  no
+          2)  Heroku
+          3)  Capistrano
+      choose  Enter your selection: 2
+  deployment  installing gems for Heroku
+      recipe  Running extras recipe...
+      option  Set a robots.txt file to ban spiders? (y/n) n
+      option  Create a GitHub repository? (y/n) y
+      extras  recipe setting quiet_assets for reduced asset pipeline logging
+      extras  recipe adding better_errors gem
+      extras  recipe removing support for Rails Turbolinks
+    composer  Installing Bundler (in case it is not installed).
+         run    gem install bundler from "."
+Successfully installed bundler-1.12.5
+1 gem installed
+    composer  Installing gems. This will take a while.
+         run    bundle install --without production from "."
+Fetching gem metadata from https://rubygems.org/
+Fetching version metadata from https://rubygems.org/
+Fetching dependency metadata from https://rubygems.org/
+Resolving dependencies.......
+Installing rake 11.2.2
+Installing aasm 4.11.0
+Using i18n 0.7.0
+Using json 1.8.3
+Installing minitest 5.9.0
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using pkg-config 1.1.7
+Using rack 1.6.4
+Installing mime-types 2.99.2
+Using arel 6.0.3
+Installing execjs 2.7.0
+Using thor 0.19.1
+Installing sass 3.4.22
+Installing normalize-rails 3.0.3
+Using bundler 1.12.5
+Using concurrent-ruby 1.0.2
+Installing tilt 2.0.5
+Installing selectize-rails 0.12.2
+Installing bcrypt 3.1.11 with native extensions
+Installing coderay 1.1.1
+Installing debug_inspector 0.0.2 with native extensions
+Installing byebug 9.0.5 with native extensions
+Installing coffee-script-source 1.10.0
+Installing orm_adapter 0.5.0
+Installing unf_ext 0.0.7.2 with native extensions
+Installing multipart-post 2.0.0
+Installing multi_json 1.12.1
+Installing high_voltage 3.0.0
+Installing hub 1.12.4
+Installing netrc 0.11.0
+Installing pg 0.18.4 with native extensions
+Installing rails_apps_pages 0.6.4
+Installing rails_layout 1.0.29
+Installing spring 1.7.2
+Installing turbolinks-source 5.0.0
+Installing sendgrid 1.2.4
+Using tzinfo 1.2.2
+Using nokogiri 1.6.8
+Using rack-test 0.6.3
+Installing warden 1.2.6
+Using mail 2.6.4
+Installing autoprefixer-rails 6.3.7
+Installing uglifier 3.0.1
+Installing neat 1.8.0
+Using sprockets 3.7.0
+Installing sucker_punch 2.0.2
+Installing better_errors 2.1.1
+Installing binding_of_caller 0.7.2 with native extensions
+Installing coffee-script 2.4.1
+Installing unf 0.1.4
+Installing faraday 0.9.2
+Installing turbolinks 5.0.1
+Using activesupport 4.2.7
+Using loofah 2.0.3
+Installing bootstrap-sass 3.3.7
+Installing domain_name 0.5.20160615
+Installing gibbon 2.2.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.7
+Using activemodel 4.2.7
+Installing jbuilder 2.6.0
+Using rails-html-sanitizer 1.0.3
+Installing http-cookie 1.0.2
+Using rails-dom-testing 1.0.7
+Using activejob 4.2.7
+Using activerecord 4.2.7
+Installing rest-client 1.8.0
+Using actionview 4.2.7
+Installing stripe 1.20.1
+Using actionpack 4.2.7
+Installing stripe_event 1.5.0
+Using actionmailer 4.2.7
+Using railties 4.2.7
+Installing kaminari 0.17.0
+Using sprockets-rails 3.1.1
+Installing momentjs-rails 2.11.1
+Installing jquery-rails 4.1.1
+Installing coffee-rails 4.1.1
+Installing responders 2.2.0
+Installing quiet_assets 1.1.0
+Using rails 4.2.7
+Installing sass-rails 5.0.6
+Installing web-console 2.3.0
+Installing datetime_picker_rails 0.0.7
+Installing devise 4.2.0
+Installing payola-payments 1.4.0
+Installing administrate 0.2.2
+Bundle complete! 25 Gemfile dependencies, 90 gems now installed.
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+Post-install message from hub:
+
+------------------------------------------------------------
+
+                  You there! Wait, I say!
+                  =======================
+
+       If you are a heavy user of `git` on the command
+       line  you  may  want  to  install `hub` the old
+       fashioned way.  Faster  startup  time,  you see.
+
+       Check  out  the  installation  instructions  at
+       https://github.com/github/hub#readme  under the
+       "Standalone" section.
+
+       Cheers,
+       defunkt
+
+------------------------------------------------------------
+
+Post-install message from sucker_punch:
+Sucker Punch v2.0 introduces backwards-incompatible changes.
+Please see https://github.com/brandonhilkert/sucker_punch/blob/master/CHANGES.md#20 for details.
+Post-install message from gibbon:
+IMPORTANT: Gibbon now targets MailChimp API 3.0, which is very different from API 2.0. Use Gibbon 1.x if you need to target API 2.0.
+Post-install message from payola-payments:
+Payola v1.4.0. See LICENSE and the LGPL-3.0 for licensing details.
+Upgrade to Payola Pro for more features and support. https://www.payola.io/pro
+    composer  Updating gem paths.
+    composer  Stage Two (running recipe 'stage_two' callbacks).
+locale
+gems
+        gems  recipe stage two
+        gems  configuring database
+      remove    config/database.yml
+      create    config/database.yml
+      option  Username for PostgreSQL?(leave blank to use the app name)
+      option  Host for PostgreSQL in database.yml? (leave blank to use default socket connection)
+        gems  Creating a user named 'simplegram' for PostgreSQL
+         run    createuser --createdb simplegram from "."
+        gsub    config/database.yml
+        gsub    config/database.yml
+        gsub    config/database.yml
+        gsub    config/database.yml
+      option  Okay to drop all existing databases named simplegram? 'No' will abort immediately! (y/n) y
+         run    bundle exec rake db:drop from "."
+         run    bundle exec rake db:create:all from "."
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: create database" from "."
+gems
+        gems  recipe stage two
+        gems  running generators
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: generators" from "."
+On branch master
+nothing to commit, working tree clean
+tests
+       tests  recipe stage two
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: testing framework" from "."
+On branch master
+nothing to commit, working tree clean
+email
+       email  recipe stage two
+      insert    config/environments/development.rb
+      insert    config/environments/production.rb
+        gsub    config/environments/production.rb
+      insert    config/environments/development.rb
+      insert    config/environments/production.rb
+        gsub    config/environments/development.rb
+        gsub    config/environments/production.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: set email accounts" from "."
+devise
+      devise  recipe stage two
+        gsub    config/initializers/filter_parameter_logging.rb
+    generate    devise:install
+      create  config/initializers/devise.rb
+      create  config/locales/devise.en.yml
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+  4. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+===============================================================================
+    generate    devise user
+      invoke  active_record
+      create    db/migrate/20160802174308_devise_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+      insert    app/models/user.rb
+       route  devise_for :users
+    generate    migration AddNameToUsers name:string
+      invoke  active_record
+      create    db/migrate/20160802174311_add_name_to_users.rb
+         run    bundle exec rake db:migrate from "."
+== 20141001170138 CreatePayolaSales: migrating ================================
+-- create_table(:payola_sales)
+   -> 0.0112s
+-- add_index("payola_sales", ["coupon_id"], {:name=>"index_payola_sales_on_coupon_id", :using=>:btree})
+   -> 0.0042s
+-- add_index("payola_sales", ["product_id", "product_type"], {:name=>"index_payola_sales_on_product", :using=>:btree})
+   -> 0.0036s
+-- add_index("payola_sales", ["email"], {:name=>"index_payola_sales_on_email", :using=>:btree})
+   -> 0.0034s
+-- add_index("payola_sales", ["guid"], {:name=>"index_payola_sales_on_guid", :using=>:btree})
+   -> 0.0040s
+== 20141001170138 CreatePayolaSales: migrated (0.0266s) =======================
+
+== 20141001203541 CreatePayolaStripeWebhooks: migrating =======================
+-- create_table(:payola_stripe_webhooks)
+   -> 0.0056s
+== 20141001203541 CreatePayolaStripeWebhooks: migrated (0.0056s) ==============
+
+== 20141002013618 CreatePayolaCoupons: migrating ==============================
+-- create_table(:payola_coupons)
+   -> 0.0078s
+== 20141002013618 CreatePayolaCoupons: migrated (0.0078s) =====================
+
+== 20141002013701 CreatePayolaAffiliates: migrating ===========================
+-- create_table(:payola_affiliates)
+   -> 0.0074s
+== 20141002013701 CreatePayolaAffiliates: migrated (0.0074s) ==================
+
+== 20141002203725 AddStripeCustomerIdToSale: migrating ========================
+-- add_column(:payola_sales, :stripe_customer_id, :string, {:limit=>191})
+   -> 0.0010s
+-- add_index(:payola_sales, :stripe_customer_id)
+   -> 0.0041s
+== 20141002203725 AddStripeCustomerIdToSale: migrated (0.0052s) ===============
+
+== 20141017233304 AddCurrencyToPayolaSale: migrating ==========================
+-- add_column(:payola_sales, :currency, :string)
+   -> 0.0006s
+== 20141017233304 AddCurrencyToPayolaSale: migrated (0.0007s) =================
+
+== 20141026101628 AddCustomFieldsToPayolaSale: migrating ======================
+-- add_column(:payola_sales, :custom_fields, :text)
+   -> 0.0005s
+== 20141026101628 AddCustomFieldsToPayolaSale: migrated (0.0005s) =============
+
+== 20141026144800 RenameCustomFieldsToSignedCustomFieldsOnPayolaSale: migrating
+-- rename_column(:payola_sales, :custom_fields, :signed_custom_fields)
+   -> 0.0051s
+== 20141026144800 RenameCustomFieldsToSignedCustomFieldsOnPayolaSale: migrated (0.0051s)
+
+== 20141029135848 AddOwnerToPayolaSale: migrating =============================
+-- add_column(:payola_sales, :owner_id, :integer)
+   -> 0.0005s
+-- add_column(:payola_sales, :owner_type, :string, {:limit=>100})
+   -> 0.0004s
+-- add_index(:payola_sales, [:owner_id, :owner_type])
+   -> 0.0040s
+== 20141029135848 AddOwnerToPayolaSale: migrated (0.0050s) ====================
+
+== 20141105043439 CreatePayolaSubscriptions: migrating ========================
+-- create_table(:payola_subscriptions)
+   -> 0.0077s
+== 20141105043439 CreatePayolaSubscriptions: migrated (0.0077s) ===============
+
+== 20141106034610 AddCurrencyToPayolaSubscriptions: migrating =================
+-- add_column(:payola_subscriptions, :currency, :string)
+   -> 0.0006s
+-- add_column(:payola_subscriptions, :amount, :integer)
+   -> 0.0004s
+== 20141106034610 AddCurrencyToPayolaSubscriptions: migrated (0.0011s) ========
+
+== 20141107025420 AddGuidToPayolaSubscriptions: migrating =====================
+-- add_column(:payola_subscriptions, :guid, :string, {:limit=>191})
+   -> 0.0006s
+-- add_index(:payola_subscriptions, :guid)
+   -> 0.0041s
+== 20141107025420 AddGuidToPayolaSubscriptions: migrated (0.0048s) ============
+
+== 20141109203101 AddStripeStatusToPayolaSubscription: migrating ==============
+-- add_column(:payola_subscriptions, :stripe_status, :string)
+   -> 0.0006s
+== 20141109203101 AddStripeStatusToPayolaSubscription: migrated (0.0007s) =====
+
+== 20141112024805 AddAffiliateIdToPayolaSubscriptions: migrating ==============
+-- add_column(:payola_subscriptions, :affiliate_id, :integer)
+   -> 0.0005s
+== 20141112024805 AddAffiliateIdToPayolaSubscriptions: migrated (0.0006s) =====
+
+== 20141114032013 AddCouponCodeToPayolaSubscriptions: migrating ===============
+-- add_column(:payola_subscriptions, :coupon, :string)
+   -> 0.0006s
+== 20141114032013 AddCouponCodeToPayolaSubscriptions: migrated (0.0006s) ======
+
+== 20141114154223 AddSignedCustomFieldsToPayolaSubscription: migrating ========
+-- add_column(:payola_subscriptions, :signed_custom_fields, :text)
+   -> 0.0005s
+== 20141114154223 AddSignedCustomFieldsToPayolaSubscription: migrated (0.0005s)
+
+== 20141114163841 AddAddressesToPayolaSubscription: migrating =================
+-- add_column(:payola_subscriptions, :customer_address, :text)
+   -> 0.0005s
+-- add_column(:payola_subscriptions, :business_address, :text)
+   -> 0.0003s
+== 20141114163841 AddAddressesToPayolaSubscription: migrated (0.0009s) ========
+
+== 20141122020755 AddSetupFeeToPayolaSubscriptions: migrating =================
+-- add_column(:payola_subscriptions, :setup_fee, :integer)
+   -> 0.0004s
+== 20141122020755 AddSetupFeeToPayolaSubscriptions: migrated (0.0005s) ========
+
+== 20141213205847 AddActiveToPayolaCoupon: migrating ==========================
+-- add_column(:payola_coupons, :active, :boolean, {:default=>true})
+   -> 0.0093s
+== 20141213205847 AddActiveToPayolaCoupon: migrated (0.0094s) =================
+
+== 20150930164135 AddTaxPercentToPayolaSubscriptions: migrating ===============
+-- add_column(:payola_subscriptions, :tax_percent, :integer)
+   -> 0.0008s
+== 20150930164135 AddTaxPercentToPayolaSubscriptions: migrated (0.0008s) ======
+
+== 20160802174308 DeviseCreateUsers: migrating ================================
+-- create_table(:users)
+   -> 0.0096s
+-- add_index(:users, :email, {:unique=>true})
+   -> 0.0037s
+-- add_index(:users, :reset_password_token, {:unique=>true})
+   -> 0.0039s
+== 20160802174308 DeviseCreateUsers: migrated (0.0173s) =======================
+
+== 20160802174311 AddNameToUsers: migrating ===================================
+-- add_column(:users, :name, :string)
+   -> 0.0006s
+== 20160802174311 AddNameToUsers: migrated (0.0007s) ==========================
+
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: devise" from "."
+omniauth
+    omniauth  recipe stage two
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: omniauth" from "."
+On branch master
+nothing to commit, working tree clean
+roles
+       roles  recipe stage two
+    generate    migration AddRoleToUsers role:integer
+      invoke  active_record
+      create    db/migrate/20160802174317_add_role_to_users.rb
+      insert    app/models/user.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add roles to a User model" from "."
+frontend
+    frontend  recipe stage two
+    generate    layout:install bootstrap3 -f
+      remove  app/assets/stylesheets/application.css
+      create  app/assets/stylesheets/application.css.scss
+      create  app/assets/stylesheets/1st_load_framework.css.scss
+       force  app/assets/javascripts/application.js
+      remove  app/assets/stylesheets/simple.css
+      remove  app/assets/stylesheets/foundation_and_overrides.css.scss
+      append  app/assets/stylesheets/1st_load_framework.css.scss
+      remove  app/views/layouts/application.html.erb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/_messages.html.erb
+      create  app/views/layouts/_navigation.html.erb
+      create  app/views/layouts/_navigation_links.html.erb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: front-end framework" from "."
+pages
+       pages  recipe stage two
+    generate    pages:about -f
+    generate  pages:home -f
+      create  app/views/visitors/index.html.erb
+      create  app/controllers/visitors_controller.rb
+      insert  config/routes.rb
+      create  app/views/pages/about.html.erb
+    generate    pages:users -f
+      create  app/views/users/_user.html.erb
+      create  app/views/users/index.html.erb
+      create  app/views/users/show.html.erb
+    generate  pages:home -f
+       force  app/views/visitors/index.html.erb
+      create  app/controllers/users_controller.rb
+      insert  config/routes.rb
+      create  config/initializers/devise_permitted_parameters.rb
+     prepend  app/views/users/_user.html.erb
+      insert  app/views/users/show.html.erb
+    generate    pages:roles -f
+       force  app/views/users/_user.html.erb
+       force  app/controllers/users_controller.rb
+    generate    administrate:install
+       route  namespace :admin do
+    resources :users
+
+    root to: "users#index"
+  end
+      create  app/controllers/admin/application_controller.rb
+      create  app/dashboards/user_dashboard.rb
+      create  app/controllers/admin/users_controller.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add pages" from "."
+analytics
+   analytics  recipe stage two
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add analytics" from "."
+On branch master
+nothing to commit, working tree clean
+extras
+      extras  recipe stage two
+        gsub    Gemfile
+        gsub    app/assets/javascripts/application.js
+        gsub    app/views/layouts/application.html.erb
+    composer  Stage Three (running recipe 'stage_three' callbacks).
+rails_stripe_membership_saas
+  rails_stripe_membership_saas  recipe stage three
+    generate    payola:install
+ initializer  payola.rb
+      insert  app/assets/javascripts/application.js
+       route  mount Payola::Engine => '/payola', as: :payola
+    generate    model Plan name stripe_id interval amount:integer --no-test-framework
+      invoke  active_record
+      create    db/migrate/20160802174344_create_plans.rb
+      create    app/models/plan.rb
+    generate    migration AddPlanRefToUsers plan:references
+      invoke  active_record
+      create    db/migrate/20160802174347_add_plan_ref_to_users.rb
+    generate    migration RemoveNameFromUsers name
+      invoke  active_record
+      create    db/migrate/20160802174350_remove_name_from_users.rb
+         run    bundle exec rake db:migrate from "."
+== 20160802174317 AddRoleToUsers: migrating ===================================
+-- add_column(:users, :role, :integer)
+   -> 0.0012s
+== 20160802174317 AddRoleToUsers: migrated (0.0012s) ==========================
+
+== 20160802174344 CreatePlans: migrating ======================================
+-- create_table(:plans)
+   -> 0.0123s
+== 20160802174344 CreatePlans: migrated (0.0124s) =============================
+
+== 20160802174347 AddPlanRefToUsers: migrating ================================
+-- add_reference(:users, :plan, {:index=>true, :foreign_key=>true})
+   -> 0.0107s
+== 20160802174347 AddPlanRefToUsers: migrated (0.0107s) =======================
+
+== 20160802174350 RemoveNameFromUsers: migrating ==============================
+-- remove_column(:users, :name, :string)
+   -> 0.0007s
+== 20160802174350 RemoveNameFromUsers: migrated (0.0007s) =====================
+
+      remove    config/initializers/active_job.rb
+      create    config/initializers/active_job.rb
+      remove    config/initializers/payola.rb
+      create    config/initializers/payola.rb
+      remove    db/seeds.rb
+      create    db/seeds.rb
+      remove    app/assets/stylesheets/pricing.css.scss
+      create    app/assets/stylesheets/pricing.css.scss
+      remove    app/controllers/application_controller.rb
+      create    app/controllers/application_controller.rb
+      remove    app/controllers/content_controller.rb
+      create    app/controllers/content_controller.rb
+      remove    app/controllers/visitors_controller.rb
+      create    app/controllers/visitors_controller.rb
+      remove    app/controllers/products_controller.rb
+      create    app/controllers/products_controller.rb
+      remove    app/controllers/registrations_controller.rb
+      create    app/controllers/registrations_controller.rb
+      remove    app/jobs/mailing_list_signup_job.rb
+      create    app/jobs/mailing_list_signup_job.rb
+      remove    app/mailers/application_mailer.rb
+      create    app/mailers/application_mailer.rb
+      remove    app/mailers/user_mailer.rb
+      create    app/mailers/user_mailer.rb
+      remove    app/models/plan.rb
+      create    app/models/plan.rb
+      remove    app/models/user.rb
+      create    app/models/user.rb
+      remove    app/services/create_plan_service.rb
+      create    app/services/create_plan_service.rb
+      remove    app/views/content/gold.html.erb
+      create    app/views/content/gold.html.erb
+      remove    app/views/content/platinum.html.erb
+      create    app/views/content/platinum.html.erb
+      remove    app/views/content/silver.html.erb
+      create    app/views/content/silver.html.erb
+      remove    app/views/devise/registrations/edit.html.erb
+      create    app/views/devise/registrations/edit.html.erb
+      remove    app/views/devise/registrations/new.html.erb
+      create    app/views/devise/registrations/new.html.erb
+      remove    app/views/layouts/_navigation_links.html.erb
+      create    app/views/layouts/_navigation_links.html.erb
+      remove    app/views/layouts/application.html.erb
+      create    app/views/layouts/application.html.erb
+      remove    app/views/layouts/mailer.html.erb
+      create    app/views/layouts/mailer.html.erb
+      remove    app/views/layouts/mailer.text.erb
+      create    app/views/layouts/mailer.text.erb
+      remove    app/views/user_mailer/expire_email.html.erb
+      create    app/views/user_mailer/expire_email.html.erb
+      remove    app/views/user_mailer/expire_email.text.erb
+      create    app/views/user_mailer/expire_email.text.erb
+      remove    app/views/visitors/index.html.erb
+      create    app/views/visitors/index.html.erb
+      remove    app/views/products/product.pdf
+      create    app/views/products/product.pdf
+      remove    config/routes.rb
+      create    config/routes.rb
+readme
+      readme  recipe stage three
+      remove    README
+      remove    README.rdoc
+      remove    doc/README_FOR_APP
+      create    README
+      append    README
+      append    README
+      create    public/humans.txt
+      remove    README.md
+      create    README.md
+      append    README.md
+      append    README.md
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add README files" from "."
+tests
+       tests  recipe stage three
+init
+        init  recipe stage three
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+        gsub    config/initializers/devise.rb
+      remove    db/seeds.rb
+      create    db/seeds.rb
+      remove    app/services/create_admin_service.rb
+      create    app/services/create_admin_service.rb
+      append    db/seeds.rb
+        init  applying migrations and seeding the database
+         run    bundle exec rake db:migrate from "."
+         run    bundle exec rake db:seed from "."
+CREATED ADMIN USER: user@example.com
+rake aborted!
+Stripe::AuthenticationError: You did not provide an API key, though you did set your Authorization header to "Bearer". Using Bearer auth, your Authorization header should look something like 'Authorization: Bearer YOUR_SECRET_KEY'. See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe.rb:247:in `handle_api_error'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe.rb:139:in `rescue in request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe.rb:125:in `request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_operations/request.rb:15:in `request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_operations/request.rb:37:in `request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_resource.rb:24:in `refresh'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_resource.rb:31:in `retrieve'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/payola-payments-1.4.0/app/services/payola/create_plan.rb:7:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/payola-payments-1.4.0/app/models/concerns/payola/plan.rb:23:in `create_stripe_plan'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:432:in `block in make_lambda'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:504:in `block in call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:504:in `each'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:504:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/callbacks.rb:306:in `_create_record'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/timestamp.rb:57:in `_create_record'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/persistence.rb:504:in `create_or_update'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/callbacks.rb:302:in `block in create_or_update'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:117:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:505:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/callbacks.rb:302:in `create_or_update'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/persistence.rb:142:in `save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/validations.rb:43:in `save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/attribute_methods/dirty.rb:29:in `save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:291:in `block in save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:220:in `transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:291:in `save!'
+/Users/nathanielwelch/tmp/simplegram/app/services/create_plan_service.rb:8:in `call'
+/Users/nathanielwelch/tmp/simplegram/db/seeds.rb:10:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:547:in `load_seed'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/tasks/database_tasks.rb:251:in `load_seed'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/railties/databases.rake:183:in `block (2 levels) in <top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/bin/ruby_executable_hooks:15:in `eval'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/bin/ruby_executable_hooks:15:in `<main>'
+RestClient::Unauthorized: 401 Unauthorized
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rest-client-1.8.0/lib/restclient/abstract_response.rb:74:in `return!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rest-client-1.8.0/lib/restclient/request.rb:495:in `process_result'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rest-client-1.8.0/lib/restclient/request.rb:421:in `block in transmit'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rest-client-1.8.0/lib/restclient/request.rb:413:in `transmit'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rest-client-1.8.0/lib/restclient/request.rb:176:in `execute'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rest-client-1.8.0/lib/restclient/request.rb:41:in `execute'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe.rb:213:in `execute_request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe.rb:126:in `request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_operations/request.rb:15:in `request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_operations/request.rb:37:in `request'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_resource.rb:24:in `refresh'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/stripe-1.20.1/lib/stripe/api_resource.rb:31:in `retrieve'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/payola-payments-1.4.0/app/services/payola/create_plan.rb:7:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/payola-payments-1.4.0/app/models/concerns/payola/plan.rb:23:in `create_stripe_plan'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:432:in `block in make_lambda'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:504:in `block in call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:504:in `each'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:504:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:778:in `_run_create_callbacks'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/callbacks.rb:306:in `_create_record'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/timestamp.rb:57:in `_create_record'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/persistence.rb:504:in `create_or_update'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/callbacks.rb:302:in `block in create_or_update'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:117:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:505:in `call'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/callbacks.rb:778:in `_run_save_callbacks'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/callbacks.rb:302:in `create_or_update'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/persistence.rb:142:in `save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/validations.rb:43:in `save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/attribute_methods/dirty.rb:29:in `save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:291:in `block in save!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:220:in `transaction'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/transactions.rb:291:in `save!'
+/Users/nathanielwelch/tmp/simplegram/app/services/create_plan_service.rb:8:in `call'
+/Users/nathanielwelch/tmp/simplegram/db/seeds.rb:10:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:547:in `load_seed'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/tasks/database_tasks.rb:251:in `load_seed'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activerecord-4.2.7/lib/active_record/railties/databases.rake:183:in `block (2 levels) in <top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/bin/ruby_executable_hooks:15:in `eval'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:seed
+(See full trace by running task with --trace)
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: set up database" from "."
+    generate    layout:devise bootstrap3 -f
+      create  app/views/devise/sessions/new.html.erb
+      create  app/views/devise/passwords/new.html.erb
+      create  app/views/devise/passwords/edit.html.erb
+       force  app/views/devise/registrations/edit.html.erb
+    generate    layout:navigation -f
+       force  app/views/layouts/_navigation_links.html.erb
+      append  app/views/layouts/_navigation_links.html.erb
+      create  app/views/layouts/_nav_links_for_auth.html.erb
+      append  app/views/layouts/_nav_links_for_auth.html.erb
+      insert  app/views/layouts/_nav_links_for_auth.html.erb
+        gsub  app/views/layouts/_navigation.html.erb
+      insert    app/views/layouts/_nav_links_for_auth.html.erb
+      remove    app/views/devise/registrations/edit.html.erb
+      create    app/views/devise/registrations/edit.html.erb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: navigation links" from "."
+deployment
+  deployment  recipe stage three
+  deployment  precompiling assets for Heroku
+         run    RAILS_ENV=production rake assets:precompile from "."
+rake aborted!
+TypeError: no implicit conversion of nil into String
+/Users/nathanielwelch/tmp/simplegram/config/initializers/devise.rb:15:in `+'
+/Users/nathanielwelch/tmp/simplegram/config/initializers/devise.rb:15:in `block in <top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/devise-4.2.0/lib/devise.rb:292:in `setup'
+/Users/nathanielwelch/tmp/simplegram/config/initializers/devise.rb:3:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:652:in `block in load_config_initializer'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:651:in `load_config_initializer'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:615:in `each'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/engine.rb:615:in `block in <class:Engine>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/initializable.rb:30:in `instance_exec'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/initializable.rb:30:in `run'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/initializable.rb:55:in `block in run_initializers'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/initializable.rb:44:in `each'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/initializable.rb:44:in `tsort_each_child'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/initializable.rb:54:in `run_initializers'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/application.rb:352:in `initialize!'
+/Users/nathanielwelch/tmp/simplegram/config/environment.rb:5:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/application.rb:328:in `require_environment!'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/railties-4.2.7/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/bin/ruby_executable_hooks:15:in `eval'
+/Users/nathanielwelch/.rvm/gems/ruby-2.3.0@simplegram/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => environment
+(See full trace by running task with --trace)
+  deployment  creating app.json file for Heroku Button
+      create    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+      append    app.json
+        gsub    app.json
+deployment
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: prepare for deployment" from "."
+extras
+      extras  recipe stage three
+      extras  recipe creating GitHub repository
+         run    hub create simplegram from "."
+github.com username: icco
+github.com password for icco (never stored):
+two-factor authentication code: 325270
+Updating origin
+created repository: icco/simplegram
+         run    hub push -u origin master from "."
+Counting objects: 320, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (286/286), done.
+Writing objects: 100% (320/320), 159.49 KiB | 0 bytes/s, done.
+Total 320 (delta 98), reused 0 (delta 0)
+To git@github.com:icco/simplegram.git
+ * [new branch]                master -> master
+Branch master set up to track remote branch master from origin.
+    composer  Stage Four (running recipe 'stage_four' callbacks).
+pages
+       pages  recipe stage four
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add Bootstrap page layouts" from "."
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+extras
+      extras  recipe stage four
+      extras  recipe removing unnecessary files and whitespace
+      remove    public/index.html
+      remove    app/assets/images/rails.png
+        gsub    Gemfile
+        gsub    Gemfile
+      remove    config/railscomposer.yml
+        gsub    Gemfile
+        gsub    Gemfile
+      remove    Gemfile.lock
+        gsub    config/routes.rb
+        gsub    config/routes.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: extras" from "."
+    composer  Your new application will contain diagnostics in its README file.
+    composer  When reporting an issue on GitHub, include the README diagnostics.
+    composer  Finished running the rails_apps_composer app template.
+    composer  Your new Rails app is ready. Time to run 'bundle install'.
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/
+Fetching version metadata from https://rubygems.org/
+Fetching dependency metadata from https://rubygems.org/
+Resolving dependencies.....
+Using rake 11.2.2
+Using aasm 4.11.0
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.9.0
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using pkg-config 1.1.7
+Using rack 1.6.4
+Using mime-types 2.99.2
+Using arel 6.0.3
+Using execjs 2.7.0
+Using thor 0.19.1
+Using sass 3.4.22
+Using normalize-rails 3.0.3
+Using bundler 1.12.5
+Using concurrent-ruby 1.0.2
+Using tilt 2.0.5
+Using selectize-rails 0.12.2
+Using bcrypt 3.1.11
+Using coderay 1.1.1
+Using debug_inspector 0.0.2
+Using byebug 9.0.5
+Using coffee-script-source 1.10.0
+Using orm_adapter 0.5.0
+Using unf_ext 0.0.7.2
+Using multipart-post 2.0.0
+Using multi_json 1.12.1
+Using high_voltage 3.0.0
+Using hub 1.12.4
+Using netrc 0.11.0
+Using pg 0.18.4
+Using rails_layout 1.0.29
+Using spring 1.7.2
+Using sendgrid 1.2.4
+Using tzinfo 1.2.2
+Using nokogiri 1.6.8
+Using rack-test 0.6.3
+Using warden 1.2.6
+Using mail 2.6.4
+Using autoprefixer-rails 6.3.7
+Using uglifier 3.0.1
+Using neat 1.8.0
+Using sprockets 3.7.0
+Using sucker_punch 2.0.2
+Using better_errors 2.1.1
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using unf 0.1.4
+Using faraday 0.9.2
+Using activesupport 4.2.7
+Using loofah 2.0.3
+Using bootstrap-sass 3.3.7
+Using domain_name 0.5.20160615
+Using gibbon 2.2.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.7
+Using activemodel 4.2.7
+Using jbuilder 2.6.0
+Using rails-html-sanitizer 1.0.3
+Using http-cookie 1.0.2
+Using rails-dom-testing 1.0.7
+Using activejob 4.2.7
+Using activerecord 4.2.7
+Using rest-client 1.8.0
+Using actionview 4.2.7
+Using stripe 1.20.1
+Using actionpack 4.2.7
+Using stripe_event 1.5.0
+Using actionmailer 4.2.7
+Using railties 4.2.7
+Using kaminari 0.17.0
+Using sprockets-rails 3.1.1
+Using momentjs-rails 2.11.1
+Using jquery-rails 4.1.1
+Using coffee-rails 4.1.1
+Using responders 2.2.0
+Using quiet_assets 1.1.0
+Using rails 4.2.7
+Using sass-rails 5.0.6
+Using web-console 2.3.0
+Using datetime_picker_rails 0.0.7
+Using devise 4.2.0
+Using payola-payments 1.4.0
+Using administrate 0.2.2
+Bundle complete! 23 Gemfile dependencies, 87 gems now installed.
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
